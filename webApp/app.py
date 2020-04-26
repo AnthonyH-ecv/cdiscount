@@ -1,6 +1,5 @@
 from flask import Flask, request, render_template
-import requests
-from bs4 import BeautifulSoup
+from price_parser import parse_price
 
 app = Flask(__name__)
 
@@ -10,18 +9,13 @@ def home():
     if(request.method == 'POST'):
 
        sku = request.form['sku']
-       url = 'https://www.cdiscount.com/f-0-'+sku+'.html'
-       response = requests.get(url)
+       result = parse_price(sku)
+       price = result[0]
+       title = result[1]
+       return render_template("index.html", price=str(price), title=title)
 
-       if response.ok:
-           soup = BeautifulSoup(response.text, 'html.parser')
-           item_price = soup.find(itemprop="price")
-           item_title = soup.find(itemprop="name")
-           title = item_title.text
-           price = float(item_price.attrs['content'])
-           return render_template('index.html', price=str(price), title=title)
-
-       else:
-           return "Bad request !"
     else:
         return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
