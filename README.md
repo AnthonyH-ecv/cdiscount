@@ -48,7 +48,6 @@ of the site www.cdiscount.com
     
 
 ## Usage
----------
    
    #### Parce_price() 
    
