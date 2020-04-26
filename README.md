@@ -71,5 +71,5 @@ of the site www.cdiscount.com
     >>> 1776.6
 
 # License
-==========
+
 This code is licensed [GPL V3]("https://en.wikipedia.org/wiki/GNU_General_Public_License").
