@@ -5,7 +5,7 @@ of the site www.cdiscount.com
 
 ###Install  :
 
-   * Download wheel file [here]("https://github.com/AnthonyH-ecv/cdiscount/raw/master/dist/cdiscount-0.0.1-py2.py3-none-any.whl")
+   * Download wheel file <a href="https://github.com/AnthonyH-ecv/cdiscount/raw/master/dist/cdiscount-0.0.1-py2.py3-none-any.whl">here</a>
    
    * Open your terminal and go to the directory where you downloaded the file (*cdiscount-0.0.1-py2.py3-none-any.whl*)
    
@@ -68,4 +68,4 @@ of the site www.cdiscount.com
     >>> 1776.6
 
 #License
-This code is licensed [GPL V3]("https://en.wikipedia.org/wiki/GNU_General_Public_License").
+This code is licensed  <a href="https://en.wikipedia.org/wiki/GNU_General_Public_License">GPL V3</a>.
