@@ -11,9 +11,9 @@ Description: Cdiscount package
         A Python package able to show the price of any product
         of the site www.cdiscount.com
         
-        ###Install  :
+        ## Install
         
-           * Download wheel file [here]("https://github.com/AnthonyH-ecv/cdiscount/raw/master/dist/cdiscount-0.0.1-py2.py3-none-any.whl")
+           * Download wheel file <a href="https://github.com/AnthonyH-ecv/cdiscount/raw/master/dist/cdiscount-0.0.1-py2.py3-none-any.whl">here</a>
            
            * Open your terminal and go to the directory where you downloaded the file (*cdiscount-0.0.1-py2.py3-none-any.whl*)
            
@@ -25,7 +25,7 @@ Description: Cdiscount package
            
             pip3 install cdiscount-0.0.1-py2.py3-none-any.whl
            
-           #####Test if you installed the package correctly
+           ##### Test if you installed the package correctly
            * Open a python terminal
             
             python
@@ -36,7 +36,8 @@ Description: Cdiscount package
             >>>
             >>> help(cdiscount)
           
-        --
+          
+        
             Help on package cdiscount:
             
             NAME
@@ -54,9 +55,10 @@ Description: Cdiscount package
         
             
         
-        #Usage
+        ## Usage
+        ---------
            
-           ####Parce_price() 
+           #### Parce_price() 
            
            > parce_price(sku)
            
@@ -64,7 +66,7 @@ Description: Cdiscount package
           
            return: float
            
-           ####Example:
+           #### Example:
            
            Test with sku : del5397184246030
         
@@ -75,9 +77,8 @@ Description: Cdiscount package
             >>> parse_price(sku)
             >>> 1776.6
         
-        #License
-        This code is licensed [GPL V3]("https://en.wikipedia.org/wiki/GNU_General_Public_License").
-        
+        # License
+        This code is licensed  <a href="https://en.wikipedia.org/wiki/GNU_General_Public_License">GPL V3</a>.
 Platform: UNKNOWN
 Classifier: Programming Language :: Python
 Classifier: License :: GPL V3
