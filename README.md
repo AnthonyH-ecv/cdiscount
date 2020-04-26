@@ -5,7 +5,7 @@ du site www.cdiscount.com
 
 Vous pouvez l'installer avec pip:
 
-   download wheel file <a href="" download>here</a>
+   download wheel file <a href="https://github.com/AnthonyH-ecv/cdiscount/blob/master/dist/cdiscount-0.0.1-py2.py3-none-any.whl" download>here</a>
 
     pip install cdiscount
 
