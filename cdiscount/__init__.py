@@ -1,4 +1,4 @@
 """
-Un package Python capable de relever le prix  de n'importe quel produit
-du site www.cdiscount.com
+A Python package able to show the price of any product
+of the site www.cdiscount.com
 """
