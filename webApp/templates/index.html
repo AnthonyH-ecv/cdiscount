@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Web app</title>
+</head>
+<body>
+
+    <h1> Welcome to price parser web app</h1>
+
+    {% if price and title%}
+        <p>{{title}}</p>
+        <p>{{price}}€</p>
+    {% endif %}
+
+    <form action="{{ url_for('home') }}" method="post">
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="sku" type="text" name="sku" class="validate">
+                <label for="sku">Entrez un sku</label>
+            </div>
+        </div>
+        <input class="btn waves-effect waves-light" type="submit" value="Voir le prix">
+    </form>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
