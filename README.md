@@ -5,6 +5,8 @@ du site www.cdiscount.com
 
 Vous pouvez l'installer avec pip:
 
+   download wheel file <a href="" download>here</a>
+
     pip install cdiscount
 
 Exemple d'usage:
