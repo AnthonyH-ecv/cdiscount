@@ -3,7 +3,7 @@ Cdiscount package
 A Python package able to show the price of any product
 of the site www.cdiscount.com
 
-###Install  :
+### Install  :
 
    * Download wheel file [here]("https://github.com/AnthonyH-ecv/cdiscount/raw/master/dist/cdiscount-0.0.1-py2.py3-none-any.whl")
    
@@ -17,7 +17,7 @@ of the site www.cdiscount.com
    
     pip3 install cdiscount-0.0.1-py2.py3-none-any.whl
    
-   #####Test if you installed the package correctly
+   ##### Test if you installed the package correctly
    * Open a python terminal
     
     python
@@ -29,6 +29,7 @@ of the site www.cdiscount.com
     >>> help(cdiscount)
   
 --
+
     Help on package cdiscount:
     
     NAME
@@ -46,9 +47,9 @@ of the site www.cdiscount.com
 
     
 
-#Usage
+# Usage
    
-   ####Parce_price() 
+   #### Parce_price() 
    
    > parce_price(sku)
    
@@ -56,7 +57,7 @@ of the site www.cdiscount.com
   
    return: float
    
-   ####Example:
+   #### Example:
    
    Test with sku : del5397184246030
 
@@ -67,5 +68,5 @@ of the site www.cdiscount.com
     >>> parse_price(sku)
     >>> 1776.6
 
-#License
+# License
 This code is licensed [GPL V3]("https://en.wikipedia.org/wiki/GNU_General_Public_License").
