@@ -76,7 +76,7 @@ AND
     
     docker run -p 5000:5000 web_app_flask:latest
 
-Now you can see the web app on <a href="http://localhost:5000/">localhost:5000</a>
+Now you can see the web app on <a href="http://localhost:5000/" target="_blank">localhost:5000</a>
 
 Welcome to my web app !
 
