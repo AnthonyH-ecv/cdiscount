@@ -74,7 +74,7 @@ We have a web-app using the method parse_price
     docker pull anthonyhecv/image-web-app:latest
 AND
     
-    docker run -p 5000:5000 web_app_flask:latest
+    docker run -p 5000:5000 anthonyhecv/image-web-app:latest
 
 Now you can see the web app on <a href="http://localhost:5000/" target="_blank">localhost:5000</a>
 
