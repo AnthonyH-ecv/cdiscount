@@ -13,7 +13,7 @@
 
     <h1> Welcome to price parser web app</h1>
 
-    {% if price and title%}
+    {% if price or title%}
         <p>{{title}}</p>
         <p>{{price}}€</p>
     {% endif %}

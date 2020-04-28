@@ -1,7 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
-def parse_price(sku) :
+
+def parse_price(sku):
 
     if isinstance(sku, str):
 
@@ -11,7 +12,7 @@ def parse_price(sku) :
         if response.ok:
             soup = BeautifulSoup(response.text, 'html.parser')
             itemprice = soup.find(itemprop="price")
-            price= float(itemprice.attrs['content'])
+            price = float(itemprice.attrs['content'])
             return price
         else:
             return response.status.code

@@ -4,15 +4,19 @@ from price_parser import parse_price
 app = Flask(__name__)
 
 
-@app.route('/',  methods=['GET','POST'])
+@app.route('/', methods=['GET', 'POST'])
 def home():
     if(request.method == 'POST'):
+        sku = request.form['sku']
+        result = parse_price(sku)
 
-       sku = request.form['sku']
-       result = parse_price(sku)
-       price = result[0]
-       title = result[1]
-       return render_template("index.html", price=str(price), title=title)
+        if isinstance(result, str):
+            title = result
+            return render_template("index.html", title=title)
+        else:
+            price = result[0]
+            title = result[1]
+            return render_template("index.html", price=str(price), title=title)
 
     else:
         return render_template('index.html')

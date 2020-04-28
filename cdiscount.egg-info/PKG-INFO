@@ -47,8 +47,8 @@ Description: Cdiscount package
                 your_path/cdiscount/__init__.py
             
             DESCRIPTION
-                Un package Python capable de relever le prix  de n'importe quel produit
-                du site www.cdiscount.com
+                A Python package able to show the price of any product
+                of the site www.cdiscount.com
             
             PACKAGE CONTENTS
                 price_parser
@@ -56,7 +56,6 @@ Description: Cdiscount package
             
         
         ## Usage
-        ---------
            
            #### Parce_price() 
            
@@ -77,8 +76,21 @@ Description: Cdiscount package
             >>> parse_price(sku)
             >>> 1776.6
         
+        # Web-app
+        We have a web-app using the method parse_price
+        
+            docker pull anthonyhecv/image-web-app:latest
+        AND
+            
+            docker run -p 5000:5000 web_app_flask:latest
+        
+        Now you can see the web app on <a href="http://localhost:5000/" target="_blank">localhost:5000</a>
+        
+        Welcome to my web app !
+        
         # License
         This code is licensed  <a href="https://en.wikipedia.org/wiki/GNU_General_Public_License">GPL V3</a>.
+        
 Platform: UNKNOWN
 Classifier: Programming Language :: Python
 Classifier: License :: GPL V3
