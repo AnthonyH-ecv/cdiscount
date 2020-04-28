@@ -11,9 +11,14 @@ def parse_price(sku):
 
         if response.ok:
             soup = BeautifulSoup(response.text, 'html.parser')
-            itemprice = soup.find(itemprop="price")
-            price = float(itemprice.attrs['content'])
-            return price
+            item_price = soup.find(itemprop="price")
+
+            # if the sku isn't a product id
+            if item_price is None:
+                return "The sku you entered is not a product identifier"
+            else:
+                price = float(item_price.attrs['content'])
+                return price
         else:
             return response.status.code
     else:
