@@ -16,8 +16,8 @@ def parse_price(sku):
         if item_price is None:
             return "The sku you entered is not a product identifier"
         else:
+            price = item_price.attrs['content']
             title = item_title.text
-            price = float(item_price.attrs['content']
             return price, title
     else:
         return "Bad request !"
