@@ -20,6 +20,6 @@ def parse_price(sku):
                 price = float(item_price.attrs['content'])
                 return price
         else:
-            return response.status.code
+            return response.status_code
     else:
         return "the argument of function isn't a string"
